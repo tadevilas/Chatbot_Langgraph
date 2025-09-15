@@ -1,6 +1,6 @@
 # LangGraph Chatbot
 
-![Chatbot UI](./image.png)   
+![Chatbot UI](image.png)   
 *Screenshot of the LangGraph Chatbot interface*
 
 ---
