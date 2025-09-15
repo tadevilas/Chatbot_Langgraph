@@ -3,10 +3,14 @@ from langchain_backend import chatbot
 from langchain_core.messages import HumanMessage
 
 
-LANGCHAIN_TRACING_V2="true"
-LANGCHAIN_ENDPOINT='https://api.smith.langchain.com'
-LANGCHAIN_API_KEY='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'
-LANGCHAIN_PROJECT="ChatBot_Project"
+import os
+from dotenv import load_dotenv
+
+# Fetch config values from environment variables
+LANGCHAIN_TRACING_V2 = os.getenv("LANGCHAIN_TRACING_V2")
+LANGCHAIN_ENDPOINT = os.getenv("LANGCHAIN_ENDPOINT")
+LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+LANGCHAIN_PROJECT = os.getenv("LANGCHAIN_PROJECT")
 
 
 # Optional config for checkpointing/thread tracking
